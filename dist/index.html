@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Une démonstration interactive de menu flottant déplaçable et ancrable." />
+    <title>Floatline — menu ancré</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23595CFF'/%3E%3Cpath d='M18 35c8-18 20 12 28-8' fill='none' stroke='white' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav" id="top"><a class="brand" href="#top"><span>F</span> floatline</a><a href="#principes">Le principe</a><a href="#api">À intégrer</a></nav>
+      <section class="hero" id="accueil">
+        <p class="eyebrow">Interaction pattern 01</p>
+        <h1>Un menu qui trouve<br><em>sa place.</em></h1>
+        <div class="hero-bottom"><p>Une barre d’actions flottante, déplaçable, qui s’ancre naturellement à la fenêtre — sans imiter un dock.</p><a class="text-link" href="#principes">Voir comment ça marche <span>↓</span></a></div>
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      </section>
+      <section class="stage-section" id="demo" aria-labelledby="stage-title">
+        <div class="section-heading"><div><p class="eyebrow">Démo vivante</p><h2 id="stage-title">Attrapez la poignée.<br>Glissez où vous voulez.</h2></div><p class="hint">Au relâchement, le menu se fixe au bord ou au coin le plus proche. Ses éléments réagissent au pointeur, et toute la barre devient plus douce au repos.</p></div>
+        <div class="stage" id="stage">
+          <div class="grid-lines"></div>
+          <div class="anchor-label label-left">ANCRE GAUCHE</div><div class="anchor-label label-right">ANCRE DROITE</div><div class="anchor-label label-top">ANCRE HAUTE</div><div class="anchor-label label-bottom">ANCRE BASSE</div>
+          <div class="floating-menu" id="floatingMenu" role="toolbar" aria-label="Actions flottantes">
+            <button class="drag-handle" id="dragHandle" aria-label="Déplacer le menu" title="Glisser pour déplacer"><i></i><i></i><i></i><i></i><i></i><i></i></button>
+            <a class="menu-item cobalt" href="#top" data-section="#accueil" aria-label="Accueil" data-tip="Accueil"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></a>
+            <a class="menu-item coral" href="#demo" aria-label="Démo interactive" data-tip="Démo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 3 14 9-7 2-3 7z"/><path d="m12 14 4 4"/></svg></a>
+            <a class="menu-item lime" href="#principes" aria-label="Les principes" data-tip="Principes"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></a>
+            <a class="menu-item dark" href="#api" aria-label="Intégration" data-tip="Intégration"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></a>
+            <button class="drag-handle" aria-label="Déplacer le menu" title="Glisser pour déplacer"><i></i><i></i><i></i><i></i><i></i><i></i></button>
+          </div>
+          <div class="stage-note" id="stageNote">Position initiale · Bas gauche</div>
+        </div>
+      </section>
+      <section class="principles" id="principes"><div><p class="eyebrow">Les trois gestes</p><h2>Simple pour la main.<br>Lisible pour l’œil.</h2></div><div class="cards"><article><span>01</span><h3>Déplacer</h3><p>Une poignée dédiée évite les clics accidentels sur les actions. Souris et tactile sont pris en charge.</p></article><article><span>02</span><h3>Rebondir</h3><p>Chaque icône grandit avec une courbe souple au survol, pour signaler la cible sans voler l’écran.</p></article><article><span>03</span><h3>S’ancrer</h3><p>À la fin du geste, la distance décide : bord horizontal, vertical ou coin le plus proche.</p></article></div></section>
+      <section class="integration" id="api"><p class="eyebrow">Pour votre tuto</p><h2>Un composant. Une règle :<br><em>rester à portée.</em></h2><div class="code-row"><code>pointerdown → pointermove → nearest edge</code><button id="resetButton">Réinitialiser la démo</button></div></section>
+    </main>
+    <footer><span>FLOATLINE / 2026</span><span>Conçu pour des interfaces qui bougent.</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

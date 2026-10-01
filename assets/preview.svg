@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Aperçu de Floatline</title>
+  <desc id="desc">Landing page sombre avec menu flottant violet, coral, vert et noir.</desc>
+  <rect width="1280" height="720" fill="#151722"/>
+  <path d="M0 108H1280M0 216H1280M0 324H1280M0 432H1280M0 540H1280M0 648H1280M160 0V720M320 0V720M480 0V720M640 0V720M800 0V720M960 0V720M1120 0V720" stroke="#ffffff" stroke-opacity=".06"/>
+  <text x="95" y="115" fill="#c8c7d0" font-family="monospace" font-size="17" letter-spacing="3">INTERACTION PATTERN 01</text>
+  <text x="90" y="265" fill="#f7f4ef" font-family="Arial, sans-serif" font-size="100" font-weight="700" letter-spacing="-6">Un menu qui trouve</text>
+  <text x="90" y="370" fill="#f7f4ef" font-family="Georgia, serif" font-size="105" font-style="italic">sa place.</text>
+  <circle cx="1080" cy="210" r="128" fill="#f67565"/>
+  <circle cx="900" cy="330" r="54" fill="#8fcf53"/>
+  <rect x="354" y="506" width="572" height="101" rx="30" fill="#f7f4ef" fill-opacity=".26" stroke="#ffffff" stroke-opacity=".48"/>
+  <g transform="translate(380 529)">
+    <g fill="#383947"><circle cx="3" cy="3" r="3"/><circle cx="3" cy="13" r="3"/><circle cx="3" cy="23" r="3"/><circle cx="13" cy="3" r="3"/><circle cx="13" cy="13" r="3"/><circle cx="13" cy="23" r="3"/></g>
+    <rect x="43" width="54" height="54" rx="16" fill="#6469ff"/><path d="m54 26 16-13 16 13v18H54zM65 44V32h10v12" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="112" width="54" height="54" rx="16" fill="#f67565"/><path d="m124 14 29 17-14 4-5 14z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="181" width="54" height="54" rx="16" fill="#8fcf53"/><g fill="none" stroke="#152313" stroke-width="3"><rect x="193" y="12" width="10" height="10" rx="1"/><rect x="213" y="12" width="10" height="10" rx="1"/><rect x="193" y="32" width="10" height="10" rx="1"/><rect x="213" y="32" width="10" height="10" rx="1"/></g>
+    <rect x="250" width="54" height="54" rx="16" fill="#11131d"/><path d="m264 16-10 11 10 11m16-22 10 11-10 11m-3-28-7 34" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(327)"><g fill="#383947"><circle cx="3" cy="3" r="3"/><circle cx="3" cy="13" r="3"/><circle cx="3" cy="23" r="3"/><circle cx="13" cy="3" r="3"/><circle cx="13" cy="13" r="3"/><circle cx="13" cy="23" r="3"/></g></g>
+  </g>
+  <text x="92" y="660" fill="#c8c7d0" font-family="Arial, sans-serif" font-size="24">FLOATLINE — menu flottant ancré, déplaçable et adaptatif</text>
+</svg>
